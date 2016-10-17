@@ -1,7 +1,8 @@
 package org.elevenfifty.smoothie.fruit;
 
-public class Banana extends Fruit implements Peelable {
+public class Banana extends Fruit implements Peelable, Cutable {
 	boolean peeled;
+	boolean cut;
 
 	public Banana() {
 		super("Banana");
@@ -20,5 +21,19 @@ public class Banana extends Fruit implements Peelable {
 	@Override
 	public boolean isPeeled() {
 		return peeled;
+	}
+
+	@Override
+	public void cut() {
+		if (!cut) {
+			cut = true;
+			System.out.println("Cut an " + getName());
+		}
+
+	}
+
+	@Override
+	public boolean isCut() {
+		return cut;
 	}
 }

@@ -1,6 +1,7 @@
 package org.elevenfifty.smoothie.fruit;
 
 public interface Peelable {
+	
 
 	public void peel();
 	
