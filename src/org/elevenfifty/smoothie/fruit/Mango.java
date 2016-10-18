@@ -1,27 +1,14 @@
 package org.elevenfifty.smoothie.fruit;
 
-public class Orange extends Citrus implements Peelable, Cutable, Addable {
+public class Mango extends Citrus implements Pittable, Cutable, Peelable, Addable {
 
-	boolean peeled;
 	boolean cut;
+	boolean peeled;
+	boolean pitted;
 	boolean added;
 
-	public Orange() {
-		super("Orange");
-		setColor("Orange");
-	}
-
-	@Override
-	public void peel() {
-		if (!peeled) {
-			peeled = true;
-			System.out.println("Peel an " + getName());
-		}
-	}
-
-	@Override
-	public boolean isPeeled() {
-		return peeled;
+	public Mango() {
+		super("Peach");
 	}
 
 	@Override
@@ -38,7 +25,32 @@ public class Orange extends Citrus implements Peelable, Cutable, Addable {
 		return cut;
 	}
 
+	@Override
+	public void peel() {
+		if (!peeled) {
+			peeled = true;
+			System.out.println("Peel an " + getName());
+		}
+	}
 
+	@Override
+	public boolean isPeeled() {
+		return peeled;
+	}
+
+	@Override
+	public void pit() {
+		if (!pitted) {
+			pitted = true;
+			System.out.println("Pit an " + getName());
+		}
+	}
+
+	@Override
+	public boolean isPitted() {
+		return pitted;
+	}
+	
 	@Override
 	public void add() {
 		if (!added) {

@@ -1,27 +1,12 @@
 package org.elevenfifty.smoothie.fruit;
 
-public final class Strawberry extends Fruit implements Cutable, Washable, Addable {
-
-	boolean cut;
-	boolean added;
+public class Raspberry extends Fruit implements Washable, Addable{
+	
 	boolean washed;
-	
-	public Strawberry() {
-		super("Strawberry");
-	}
-	
-	@Override
-	public void cut() {
-		if (!cut) {
-			cut = true;
-			System.out.println("Cut an " + getName());
-		}
+	boolean added;
 
-	}
-
-	@Override
-	public boolean isCut() {
-		return cut;
+	public Raspberry(String name) {
+		super(name);
 	}
 	
 	@Override

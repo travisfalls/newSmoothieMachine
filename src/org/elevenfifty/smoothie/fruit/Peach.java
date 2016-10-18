@@ -1,15 +1,16 @@
 package org.elevenfifty.smoothie.fruit;
 
-public final class Strawberry extends Fruit implements Cutable, Washable, Addable {
+public class Peach extends Citrus implements Pittable, Cutable, Washable, Addable {
 
 	boolean cut;
-	boolean added;
 	boolean washed;
-	
-	public Strawberry() {
-		super("Strawberry");
+	boolean pitted;
+	boolean added;
+
+	public Peach() {
+		super("Peach");
 	}
-	
+
 	@Override
 	public void cut() {
 		if (!cut) {
@@ -23,7 +24,7 @@ public final class Strawberry extends Fruit implements Cutable, Washable, Addabl
 	public boolean isCut() {
 		return cut;
 	}
-	
+
 	@Override
 	public void wash() {
 		if (!washed) {
@@ -35,6 +36,19 @@ public final class Strawberry extends Fruit implements Cutable, Washable, Addabl
 	@Override
 	public boolean isWashed() {
 		return washed;
+	}
+
+	@Override
+	public void pit() {
+		if (!pitted) {
+			pitted = true;
+			System.out.println("Pit an " + getName());
+		}
+	}
+
+	@Override
+	public boolean isPitted() {
+		return pitted;
 	}
 	
 	@Override
@@ -49,5 +63,5 @@ public final class Strawberry extends Fruit implements Cutable, Washable, Addabl
 	public boolean isAdded() {
 		return added;
 	}
-	
+
 }

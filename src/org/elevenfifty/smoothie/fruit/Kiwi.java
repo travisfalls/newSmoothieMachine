@@ -1,12 +1,12 @@
 package org.elevenfifty.smoothie.fruit;
 
-public class Banana extends Fruit implements Peelable, Cutable, Addable {
+public class Kiwi extends Fruit implements Peelable, Cutable, Addable {
 	boolean peeled;
 	boolean cut;
 	boolean added;
 
-	public Banana() {
-		super("Banana");
+	public Kiwi() {
+		super("Kiwi");
 	}
 
 	@Override

@@ -1,13 +1,18 @@
-package org.elevenfifty.smoothie.fruit;
+package org.elevenfifty.smoothie.vegetable;
 
-public final class Strawberry extends Fruit implements Cutable, Washable, Addable {
+import org.elevenfifty.smoothie.Ingredient;
+import org.elevenfifty.smoothie.fruit.Addable;
+import org.elevenfifty.smoothie.fruit.Cutable;
+import org.elevenfifty.smoothie.fruit.Washable;
+
+public final class Celery extends Vegetable implements Cutable, Washable, Addable, Ingredient {
 
 	boolean cut;
 	boolean added;
 	boolean washed;
 	
-	public Strawberry() {
-		super("Strawberry");
+	public Celery() {
+		super("Celery");
 	}
 	
 	@Override
