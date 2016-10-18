@@ -1,15 +1,14 @@
-package org.elevenfifty.smoothie.other;
+package org.elevenfifty.smoothie.base;
 
 import org.elevenfifty.smoothie.Ingredient;
 import org.elevenfifty.smoothie.fruit.Addable;
 
-public class Coffee implements Ingredient, Addable {
+public class NonFatMilk extends Base implements Ingredient, Addable {
 
 	boolean added;
 	
-	@Override
-	public String getName() {
-		return "Coffee";
+	public NonFatMilk() {
+		super("Non-Fat Milk");
 	}
 	
 	@Override

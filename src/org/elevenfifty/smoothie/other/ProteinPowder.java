@@ -3,13 +3,13 @@ package org.elevenfifty.smoothie.other;
 import org.elevenfifty.smoothie.Ingredient;
 import org.elevenfifty.smoothie.fruit.Addable;
 
-public class Coffee implements Ingredient, Addable {
+public class ProteinPowder implements Ingredient, Addable {
 
 	boolean added;
 	
 	@Override
 	public String getName() {
-		return "Coffee";
+		return "Protein Powder";
 	}
 	
 	@Override

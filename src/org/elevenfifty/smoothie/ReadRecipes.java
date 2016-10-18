@@ -11,10 +11,13 @@ import java.util.Collection;
 import java.util.Scanner;
 
 import org.apache.commons.lang3.StringUtils;
+import org.elevenfifty.smoothie.base.Milk;
 import org.elevenfifty.smoothie.fruit.Banana;
 import org.elevenfifty.smoothie.fruit.Orange;
 import org.elevenfifty.smoothie.fruit.Pineapple;
 import org.elevenfifty.smoothie.fruit.Strawberry;
+import org.elevenfifty.smoothie.other.AppleJuice;
+import org.elevenfifty.smoothie.other.IceCube;
 import org.elevenfifty.smoothie.other.Rum;
 
 public class ReadRecipes {
@@ -69,7 +72,13 @@ public class ReadRecipes {
 			return new Orange();
 		} else if("Pineapple".equalsIgnoreCase(ingredientName)){
 			return new Pineapple();
-		} 
+		} else if("AppleJuice".equalsIgnoreCase(ingredientName)){
+			return new AppleJuice();
+		} else if ("IceCubes".equalsIgnoreCase(ingredientName)){
+			return new IceCube();
+		} else if ("Milk".equalsIgnoreCase(ingredientName)){
+			return new Milk();
+		}
 //
 //		switch (fruitName.toLowerCase()) {
 //		case "banana": //NOTE: This is lower case!
